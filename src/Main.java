@@ -20,14 +20,19 @@ public class Main {
         var parser = new JsonParser();
         List<Map<String, String>> ListaDeFilmes = parser.parse(body);
 
+        //variaveis de cores
+        var color_reset = Colors.RESET;
+        var green = Colors.COLOR_GREEN;
+        var purple = Colors.PURPLE_BACKGROUND;
+
         //exibir e manipular os dados
-        System.out.println("Top 10 Filmes");
+        System.out.println( green + "Top 10 Filmes" + color_reset);
         System.out.println();
 
         for(Map<String, String> filme: ListaDeFilmes) {
             System.out.println("Titulo: " + filme.get("title"));
             System.out.println("Poster: " + filme.get("image"));
-            System.out.println("Classificação: " + filme.get("imDbRating"));
+            System.out.println(purple + "Classificação: " + filme.get("imDbRating") + color_reset);
 
             System.out.println();
 
