@@ -27,15 +27,13 @@ public class PictureGenerator {
         graphics.setColor(Color.YELLOW);
         graphics.setFont(font);
 
-
-
         // manoel gomes
-        InputStream manoel = new URL("https://o.remove.bg/downloads/11bb403e-7432-4b04-8696-75aaa3e45bf2/image-removebg-preview.png").openStream();
-        BufferedImage manoelImage = ImageIO.read(manoel);
-        graphics.drawImage(manoelImage, 286, 1200, null);
+        //InputStream manoel = new URL("https://o.remove.bg/downloads/11bb403e-7432-4b04-8696-75aaa3e45bf2/image-removebg-preview.png").openStream();
+        //BufferedImage manoelImage = ImageIO.read(manoel);
+        //graphics.drawImage(manoelImage, 286, 1200, null);
 
         //escrever uma frase na nova imagem
-        graphics.drawString("Gostei demaize", 0, newHeight - 100);
+        graphics.drawString("14/10", 0, newHeight - 100);
 
         // escrever a imagem em um arquivo
         ImageIO.write(newImage, "png", new File(fileName));
